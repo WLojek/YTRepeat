@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "YTRepeat",
+  "description":
+    "As the name suggests, simple google chrome plugin for repeating videos on YouTube. No more and no less",
+  "version": "1.0.0",
+  "author": "WLojek",
+  "background": {
+    "scripts": ["ytRepeat.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "YTRepeat"
+  },
+  "permissions": ["tabs", "*://*.youtube.com/watch*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["jquery-3.3.1.js", "ytRepeat.js"]
+    }
+  ]
+}
