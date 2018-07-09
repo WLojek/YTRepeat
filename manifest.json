@@ -3,7 +3,7 @@
   "name": "YTRepeat",
   "description":
     "As the name suggests, simple google chrome plugin for repeating videos on YouTube. No more and no less",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "WLojek",
   "background": {
     "scripts": ["ytRepeat.js"],
